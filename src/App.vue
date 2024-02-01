@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DescriptionLights from "./components/DescriptionLights.vue";
+import DescriptionSection from "./components/DescriptionSection.vue";
 </script>
 
 <template>
@@ -9,6 +9,27 @@ import DescriptionLights from "./components/DescriptionLights.vue";
       <h1 class="line">|</h1>
       <h2 class="front-end">Frontend Developer</h2>
       <div class="icons">
+        <a href="https://github.com/onurkantarci">
+          <v-icon
+            class="icon"
+            name="bi-github"
+            scale="1.5"
+            speed="slow"
+            fill="white"
+            animation="pulse"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/onur-kantarci-1933672b1/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY"
+        >
+          <v-icon
+            class="icon"
+            name="bi-linkedin"
+            scale="1.5"
+            speed="slow"
+            fill="white"
+          />
+        </a>
         <a href="https://www.instagram.com/onur.kntrc/">
           <v-icon
             class="icon"
@@ -28,32 +49,11 @@ import DescriptionLights from "./components/DescriptionLights.vue";
             fill="white"
           />
         </a>
-        <a
-          href="https://www.linkedin.com/in/onur-kantarci-1933672b1/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY"
-        >
-          <v-icon
-            class="icon"
-            name="bi-linkedin"
-            scale="1.5"
-            speed="slow"
-            fill="white"
-          />
-        </a>
-        <a href="https://github.com/onurkantarci">
-          <v-icon
-            class="icon"
-            name="bi-github"
-            scale="1.5"
-            speed="slow"
-            fill="white"
-            animation="pulse"
-          />
-        </a>
       </div>
     </div>
   </div>
   <div class="ceiling">
-    <DescriptionLights />
+    <DescriptionSection />
   </div>
 </template>
 

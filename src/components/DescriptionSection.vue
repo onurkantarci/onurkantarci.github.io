@@ -1,0 +1,188 @@
+<template>
+  <div class="whole-container">
+    <div class="description">
+      <p>
+        Hey! I'm <span class="bold">ONUR</span>, a Frontend Developer from
+        <span class="bold">KOSOVO</span>.
+      </p>
+      <p>Currently I'm doing a lawyer internship in Ankara/Turkey,</p>
+      <p>which also I'm working on Frontend projects at the same time.</p>
+    </div>
+
+    <h2 class="title-of-projects">
+      I have used <v-icon name="co-html5-shield" scale="1.5"></v-icon>
+      <v-icon name="fa-css3-alt" scale="1.5"></v-icon
+      ><v-icon name="co-javascript" scale="1.5"></v-icon>
+      <v-icon name="co-typescript" scale="1.5"></v-icon>
+      <v-icon name="co-react" scale="1.5"></v-icon>
+      <v-icon name="co-vue-js" scale="1.5"></v-icon> so far .
+    </h2>
+    <h2 class="title-of-projects">Some of the Projects I worked on :</h2>
+
+    <div class="info-boxes">
+      <div class="info-container">
+        <a
+          href="https://www.linkedin.com/in/onur-kantarci-1933672b1/overlay/projects/1434176168/multiple-media-viewer/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY&treasuryMediaId=1706536193106"
+          ><img src="../../public/Trending Movies.png"
+        /></a>
+
+        <p class="info-text">WatchUp</p>
+      </div>
+      <div class="info-container">
+        <a
+          href="https://www.linkedin.com/in/onur-kantarci-1933672b1/overlay/projects/1437697405/multiple-media-viewer/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY&treasuryMediaId=1706539713975"
+          ><img src="../../public/TodoListPage.png"
+        /></a>
+
+        <p class="info-text">TODO List</p>
+      </div>
+      <div class="info-container">
+        <a href="https://github.com/onurkantarci/hyrule-jobs"
+          ><img src="../../public/hyruljobs.png"
+        /></a>
+
+        <p class="info-text">Hyrule Jobs</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.whole-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+}
+.title-of-projects {
+  font-family: "Oswald", sans-serif;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #00eaffa1;
+}
+.info-text {
+  font-family: "Oswald", sans-serif;
+}
+
+img {
+  opacity: 0.8;
+  max-width: 100%;
+  max-height: 150px;
+  display: block;
+  margin: auto;
+}
+.info-boxes {
+  padding: 10px;
+  background-color: #15354a;
+  border: 1px solid rgba(52, 152, 219, 0.4);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  border-radius: 50px;
+  margin: 50px;
+}
+.info-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #22587d;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
+  border: 2px solid #2980b9;
+  width: 250px;
+  height: 200px;
+  margin: 20px;
+  overflow: hidden;
+}
+.info-container:hover {
+  box-shadow: 0 8px 16px rgba(52, 152, 219, 0.8);
+  transform: translateY(-2px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.bold {
+  font-weight: bold;
+}
+.description {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-direction: column;
+  animation: pulsetext 1s infinite alternate;
+}
+
+@keyframes pulsetext {
+  0% {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+.lines-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lines-left {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.pulse-animation {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 50px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 1px solid rgb(27, 26, 26, 0.2);
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 10px 10px 10px rgba(40, 115, 196, 0.5);
+  }
+  100% {
+    box-shadow: 10px 10px 10px rgb(40, 102, 196);
+  }
+}
+
+h3 {
+  color: #3ca0de;
+  font-family: "Sixtyfour", sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2 {
+  color: #287ec4;
+  margin: 0;
+}
+</style>
