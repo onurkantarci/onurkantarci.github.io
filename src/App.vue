@@ -4,9 +4,53 @@ import DescriptionLights from "./components/DescriptionLights.vue";
 
 <template>
   <div class="header">
-    <h1 class="name">Onur Kantarci</h1>
-    <h1 class="line">|</h1>
-    <h2 class="front-end">Frontend Developer</h2>
+    <div class="left-side">
+      <h1 class="name">Onur Kantarci</h1>
+      <h1 class="line">|</h1>
+      <h2 class="front-end">Frontend Developer</h2>
+      <div class="icons">
+        <a href="https://www.instagram.com/onur.kntrc/">
+          <v-icon
+            class="icon"
+            name="bi-instagram"
+            scale="1.5"
+            animation="wrench"
+            speed="slow"
+            fill="white"
+          />
+        </a>
+        <a href="https://www.youtube.com/channel/UCfcbVqPevCZ-31ALu2znTqg">
+          <v-icon
+            class="icon"
+            name="ri-youtube-line"
+            scale="1.5"
+            speed="slow"
+            fill="white"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/onur-kantarci-1933672b1/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY"
+        >
+          <v-icon
+            class="icon"
+            name="bi-linkedin"
+            scale="1.5"
+            speed="slow"
+            fill="white"
+          />
+        </a>
+        <a href="https://github.com/onurkantarci">
+          <v-icon
+            class="icon"
+            name="bi-github"
+            scale="1.5"
+            speed="slow"
+            fill="white"
+            animation="pulse"
+          />
+        </a>
+      </div>
+    </div>
   </div>
   <div class="ceiling">
     <DescriptionLights />
@@ -14,8 +58,20 @@ import DescriptionLights from "./components/DescriptionLights.vue";
 </template>
 
 <style scoped>
+a:hover {
+  background-color: rgba(255, 255, 255, 0.21);
+  border-radius: 20px;
+}
+.icon {
+  padding: 10px;
+}
+.icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
 .line {
-  color: #ff5555; /* Reddish color */
+  color: #00ebff;
   position: relative;
   animation: glitch 5s infinite linear;
 }
@@ -23,24 +79,25 @@ import DescriptionLights from "./components/DescriptionLights.vue";
 @keyframes glitch {
   0%,
   100% {
-    text-shadow: -2px -2px 2px #ff5555, 2px 2px 2px #ffffff;
-    color: #ff5555; /* Reddish color */
+    text-shadow: -2px -2px 2px #00ebff, 2px 2px 2px #ffffff;
+    color: #00ebff;
   }
   50% {
-    text-shadow: 2px -2px 2px #ff5555, -2px 2px 2px #ffffff;
-    color: #ffffff; /* Whiteish color */
+    text-shadow: 2px -2px 2px #00ebff, -2px 2px 2px #ffffff;
+    color: #ffffff;
   }
 }
-.header {
-  background: linear-gradient(
-    to right,
-    #232424,
-    #042642
-  ); /* Reddish to Blackish gradient */
+
+.right-side {
+  display: flex;
+  justify-content: flex-end;
+}
+.left-side {
+  background: linear-gradient(to right, #232424, #042642);
   padding: 10px;
   background-color: transparent;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   max-height: 50px;
@@ -48,14 +105,14 @@ import DescriptionLights from "./components/DescriptionLights.vue";
 }
 .name {
   margin-left: 15px;
-  color: #ffffff; /* Whiteish color */
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 25px;
 }
 .front-end {
-  color: #289dc4; /* Reddish color */
+  color: #289dc4;
   font-family: "Sixtyfour", sans-serif;
   margin-top: 17px;
   font-size: 15px;
@@ -63,12 +120,12 @@ import DescriptionLights from "./components/DescriptionLights.vue";
   font-style: normal;
 }
 h3 {
-  color: #de3c4b; /* Reddish color */
+  color: #de3c4b;
   font-family: "Sixtyfour", sans-serif;
   font-size: 12px;
 }
 h4 {
-  color: #c42847; /* Reddish color */
+  color: #c42847;
   font-family: "Roboto", sans-serif;
 }
 </style>
