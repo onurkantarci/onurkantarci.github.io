@@ -8,14 +8,17 @@
       <p>Currently I'm doing a lawyer internship in Ankara/Turkey,</p>
       <p>which also I'm working on Frontend projects at the same time.</p>
     </div>
-    <h2 class="title-of-projects">Technologies I have used so far :</h2>
-    <h2 class="technologies">HTML</h2>
-    <h2 class="technologies">CSS</h2>
-    <h2 class="technologies">JAVASCRIPT</h2>
-    <h2 class="technologies">TYPESCRIPT</h2>
-    <h2 class="technologies">REACT</h2>
-    <h2 class="technologies">VUEJS</h2>
-    <h2 class="title-of-projects">Some of the Projects I worked on :</h2>
+    <h2 class="title-of-projects">Technologies I have used so far:</h2>
+    <div class="technologies-container">
+      <h2 class="technologies">HTML</h2>
+      <h2 class="technologies">CSS</h2>
+      <h2 class="technologies">JAVASCRIPT</h2>
+      <h2 class="technologies">TYPESCRIPT</h2>
+      <h2 class="technologies">REACT</h2>
+      <h2 class="technologies">VUEJS</h2>
+    </div>
+
+    <h2 class="title-of-projects">Some of the Projects I worked on:</h2>
 
     <div class="info-boxes">
       <div class="info-container">
@@ -48,12 +51,18 @@
 </template>
 
 <style scoped>
+.technologies-container {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
 .technologies {
   font-family: "Oswald", sans-serif;
   display: flex;
   justify-content: center;
   color: #4c9ba2a1;
   margin-top: 20px;
+  font-size: 20px;
 }
 .whole-container {
   display: flex;
@@ -69,7 +78,6 @@
   justify-content: center;
   gap: 20px;
   color: #00eaffa1;
-  box-shadow: 10px 10px 10px rgb(26, 25, 25);
   padding: 5px;
 }
 .info-text {
@@ -140,7 +148,6 @@ img {
   flex-direction: column;
   color: white;
   margin-bottom: 40px;
-  box-shadow: 10px 10px 10px rgb(26, 25, 25);
 }
 .lines-down {
   display: flex;
