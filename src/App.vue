@@ -59,6 +59,7 @@ import DescriptionLights from "./components/DescriptionLights.vue";
 
 <style scoped>
 a:hover {
+  transition: background-color 1s;
   background-color: rgba(255, 255, 255, 0.21);
   border-radius: 20px;
 }
@@ -109,13 +110,13 @@ a:hover {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 25px;
+  font-size: 22px;
 }
 .front-end {
   color: #289dc4;
   font-family: "Sixtyfour", sans-serif;
   margin-top: 17px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   font-style: normal;
 }

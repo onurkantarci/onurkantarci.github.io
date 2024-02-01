@@ -10,9 +10,34 @@ import {
   RiYoutubeLine,
   BiLinkedin,
   BiGithub,
+  IoBulbSharp,
+  BiArrowBarDown,
+  MdFilecopyOutlined,
+  CoHtml5Shield,
+  FaCss3Alt,
+  CoJavascript,
+  CoTypescript,
+  CoReact,
+  CoVueJs,
 } from "oh-vue-icons/icons";
 
-addIcons(FaFlag, RiZhihuFill, BiInstagram, RiYoutubeLine, BiLinkedin, BiGithub);
+addIcons(
+  FaFlag,
+  RiZhihuFill,
+  BiInstagram,
+  RiYoutubeLine,
+  BiLinkedin,
+  BiGithub,
+  IoBulbSharp,
+  BiArrowBarDown,
+  MdFilecopyOutlined,
+  CoHtml5Shield,
+  FaCss3Alt,
+  CoJavascript,
+  CoTypescript,
+  CoReact,
+  CoVueJs
+);
 
 const app = createApp(App);
 app.component("v-icon", OhVueIcon);
