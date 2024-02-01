@@ -8,21 +8,20 @@
       <p>Currently I'm doing a lawyer internship in Ankara/Turkey,</p>
       <p>which also I'm working on Frontend projects at the same time.</p>
     </div>
-
-    <h2 class="title-of-projects">
-      I have used <v-icon name="co-html5-shield" scale="1.5"></v-icon>
-      <v-icon name="fa-css3-alt" scale="1.5"></v-icon
-      ><v-icon name="co-javascript" scale="1.5"></v-icon>
-      <v-icon name="co-typescript" scale="1.5"></v-icon>
-      <v-icon name="co-react" scale="1.5"></v-icon>
-      <v-icon name="co-vue-js" scale="1.5"></v-icon> so far .
-    </h2>
+    <h2 class="title-of-projects">Technologies I have used so far :</h2>
+    <h2 class="technologies">HTML</h2>
+    <h2 class="technologies">CSS</h2>
+    <h2 class="technologies">JAVASCRIPT</h2>
+    <h2 class="technologies">TYPESCRIPT</h2>
+    <h2 class="technologies">REACT</h2>
+    <h2 class="technologies">VUEJS</h2>
     <h2 class="title-of-projects">Some of the Projects I worked on :</h2>
 
     <div class="info-boxes">
       <div class="info-container">
         <a
           href="https://www.linkedin.com/in/onur-kantarci-1933672b1/overlay/projects/1434176168/multiple-media-viewer/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY&treasuryMediaId=1706536193106"
+          target="_blank"
           ><img src="../../public/Trending Movies.png"
         /></a>
 
@@ -31,13 +30,14 @@
       <div class="info-container">
         <a
           href="https://www.linkedin.com/in/onur-kantarci-1933672b1/overlay/projects/1437697405/multiple-media-viewer/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY&treasuryMediaId=1706539713975"
+          target="_blank"
           ><img src="../../public/TodoListPage.png"
         /></a>
 
         <p class="info-text">TODO List</p>
       </div>
       <div class="info-container">
-        <a href="https://github.com/onurkantarci/hyrule-jobs"
+        <a href="https://github.com/onurkantarci/hyrule-jobs" target="_blank"
           ><img src="../../public/hyruljobs.png"
         /></a>
 
@@ -48,6 +48,13 @@
 </template>
 
 <style scoped>
+.technologies {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #4c9ba2a1;
+  margin-top: 20px;
+}
 .whole-container {
   display: flex;
   justify-content: center;
@@ -57,11 +64,13 @@
 }
 .title-of-projects {
   font-family: "Oswald", sans-serif;
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 20px;
   color: #00eaffa1;
+  box-shadow: 10px 10px 10px rgb(26, 25, 25);
+  padding: 5px;
 }
 .info-text {
   font-family: "Oswald", sans-serif;
@@ -123,22 +132,15 @@ img {
   font-weight: bold;
 }
 .description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
   flex-direction: column;
-  animation: pulsetext 1s infinite alternate;
-}
-
-@keyframes pulsetext {
-  0% {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    color: rgb(255, 255, 255);
-  }
+  color: white;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 10px rgb(26, 25, 25);
 }
 .lines-down {
   display: flex;

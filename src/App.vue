@@ -9,38 +9,28 @@ import DescriptionSection from "./components/DescriptionSection.vue";
       <h1 class="line">|</h1>
       <h2 class="front-end">Frontend Developer</h2>
       <div class="icons">
-        <a href="https://github.com/onurkantarci">
-          <v-icon
-            class="icon"
-            name="bi-github"
-            scale="1.5"
-            speed="slow"
-            fill="white"
-            animation="pulse"
-          />
+        <a href="https://github.com/onurkantarci" target="_blank">
+          <v-icon class="icon" name="bi-github" scale="1.5" fill="white" />
         </a>
         <a
           href="https://www.linkedin.com/in/onur-kantarci-1933672b1/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY"
+          target="_blank"
         >
-          <v-icon
-            class="icon"
-            name="bi-linkedin"
-            scale="1.5"
-            speed="slow"
-            fill="white"
-          />
+          <v-icon class="icon" name="bi-linkedin" scale="1.5" fill="white" />
         </a>
-        <a href="https://www.instagram.com/onur.kntrc/">
+        <a href="https://www.instagram.com/onur.kntrc/" target="_blank">
           <v-icon
             class="icon"
             name="bi-instagram"
             scale="1.5"
-            animation="wrench"
             speed="slow"
             fill="white"
           />
         </a>
-        <a href="https://www.youtube.com/channel/UCfcbVqPevCZ-31ALu2znTqg">
+        <a
+          href="https://www.youtube.com/channel/UCfcbVqPevCZ-31ALu2znTqg"
+          target="_blank"
+        >
           <v-icon
             class="icon"
             name="ri-youtube-line"
@@ -111,6 +101,7 @@ a:hover {
   font-weight: bold;
   font-style: normal;
   font-size: 22px;
+  margin-right: 10px;
 }
 .front-end {
   color: #289dc4;
@@ -119,6 +110,7 @@ a:hover {
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
+  margin-left: 10px;
 }
 h3 {
   color: #de3c4b;
