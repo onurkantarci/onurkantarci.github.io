@@ -204,11 +204,22 @@ h2 {
     font-size: 16px;
     margin-top: 15px;
   }
+
+  .technologies-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .info-container {
-    width: 40px;
+    padding: 30px;
+    width: 120px;
     height: 100px;
   }
   .info-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
   }
   .whole-container {

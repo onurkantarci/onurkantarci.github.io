@@ -5,7 +5,10 @@ import DescriptionSection from "./components/DescriptionSection.vue";
 <template>
   <div class="header">
     <div class="left-side">
-      <h1 class="name">Onur Kantarci</h1>
+      <div class="name-container">
+        <h1 class="name">Onur</h1>
+        <h1 class="name">Kantarci</h1>
+      </div>
       <h1 class="line">|</h1>
       <h2 class="front-end">Frontend Developer</h2>
       <div class="icons">
@@ -94,14 +97,20 @@ a:hover {
   max-height: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-.name {
+.name-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
   margin-left: 15px;
+  gap: 9px;
+}
+
+.name {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 22px;
-  margin-right: 10px;
 }
 .front-end {
   color: #289dc4;
@@ -128,8 +137,11 @@ h4 {
     text-align: center;
   }
   .icons {
+    margin-right: 72px;
     margin-left: 0;
-    margin-top: 10px;
+  }
+  .icon {
+    width: 19px;
   }
   .header {
     flex-direction: column;
@@ -137,12 +149,22 @@ h4 {
 }
 
 @media (max-width: 600px) {
+  .name-container {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 80px;
+    margin-top: 20px;
+    gap: 4px;
+  }
+
   .name {
-    font-size: 18px;
+    margin-top: -10px;
+    font-size: 10px;
+    font-size: 13px;
   }
   .front-end {
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 7px;
   }
 }
 </style>
