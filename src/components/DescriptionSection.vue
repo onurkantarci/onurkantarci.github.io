@@ -22,29 +22,31 @@
 
     <div class="info-boxes">
       <div class="info-container">
-        <a
-          href="https://www.linkedin.com/in/onur-kantarci-1933672b1/overlay/projects/1434176168/multiple-media-viewer/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY&treasuryMediaId=1706536193106"
-          target="_blank"
-          ><img src="../../public/Trending Movies.png"
-        /></a>
+        <a href="https://github.com/onurkantarci/watchup" target="_blank">
+          <div class="info-container">
+            <img src="../../public/Trending Movies.png" />
 
-        <p class="info-text">WatchUp</p>
+            <p class="info-text">WatchUp</p>
+          </div>
+        </a>
       </div>
       <div class="info-container">
-        <a
-          href="https://www.linkedin.com/in/onur-kantarci-1933672b1/overlay/projects/1437697405/multiple-media-viewer/?profileId=ACoAAEr7Sj8BcVUr5tCh79uckj2F7kTDq5n_JyY&treasuryMediaId=1706539713975"
-          target="_blank"
-          ><img src="../../public/TodoListPage.png"
-        /></a>
+        <a href="https://github.com/onurkantarci/todolist-vue" target="_blank">
+          <div class="info-container">
+            <img src="../../public/TodoListPage.png" />
 
-        <p class="info-text">TODO List</p>
+            <p class="info-text">TODO List</p>
+          </div>
+        </a>
       </div>
       <div class="info-container">
-        <a href="https://github.com/onurkantarci/hyrule-jobs" target="_blank"
-          ><img src="../../public/hyruljobs.png"
-        /></a>
+        <a href="https://github.com/onurkantarci/hyrule-jobs" target="_blank">
+          <div class="info-container">
+            <img src="../../public/hyruljobs.png" />
 
-        <p class="info-text">Hyrule Jobs</p>
+            <p class="info-text">Hyrule Jobs</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -78,7 +80,7 @@
   justify-content: center;
   gap: 20px;
   color: #00eaffa1;
-  padding: 5px;
+  padding: 3px;
 }
 .info-text {
   font-family: "Oswald", sans-serif;
@@ -97,9 +99,8 @@ img {
   border: 1px solid rgba(52, 152, 219, 0.4);
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
   border-radius: 50px;
-  margin: 50px;
+  margin: 22px 50px 22px 50px;
 }
 .info-container {
   display: flex;
