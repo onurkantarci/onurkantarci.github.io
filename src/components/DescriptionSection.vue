@@ -60,7 +60,7 @@
   font-family: "Oswald", sans-serif;
   display: flex;
   justify-content: center;
-  color: #4c9ba2a1;
+  color: #ffffffcf;
   margin-top: 20px;
   font-size: 20px;
 }
@@ -148,6 +148,7 @@ img {
   flex-direction: column;
   color: white;
   margin-bottom: 40px;
+  font-size: 18px;
 }
 .lines-down {
   display: flex;
@@ -193,5 +194,25 @@ h1,
 h2 {
   color: #287ec4;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .title-of-projects {
+    font-size: 18px;
+  }
+  .technologies {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .info-container {
+    width: 40px;
+    height: 100px;
+  }
+  .info-boxes {
+    margin: 10px;
+  }
+  .whole-container {
+    padding: 10px;
+  }
 }
 </style>

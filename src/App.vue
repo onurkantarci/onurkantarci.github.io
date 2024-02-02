@@ -121,4 +121,28 @@ h4 {
   color: #c42847;
   font-family: "Roboto", sans-serif;
 }
+
+@media (max-width: 768px) {
+  .left-side {
+    justify-content: center;
+    text-align: center;
+  }
+  .icons {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .name {
+    font-size: 18px;
+  }
+  .front-end {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+}
 </style>
