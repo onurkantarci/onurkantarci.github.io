@@ -22,6 +22,14 @@
 
     <div class="info-boxes">
       <div class="info-container">
+        <a href="" target="_blank">
+          <div class="info-container">
+            <p class="info-text">Money Tracker</p>
+            <h4>(ongoing)</h4>
+          </div>
+        </a>
+      </div>
+      <div class="info-container">
         <a href="https://github.com/onurkantarci/watchup" target="_blank">
           <div class="info-container">
             <img src="../../public/Trending Movies.png" />
@@ -53,6 +61,9 @@
 </template>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
 .technologies-container {
   display: flex;
   justify-content: center;
