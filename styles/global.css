@@ -1,0 +1,78 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #000000, #2f3030);
+  color: #fff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #393a3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4de7a6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c8151;
+}
+
+header {
+  background: linear-gradient(135deg, #000000d1, #2f3030c9);
+  color: #fff;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  padding: 7px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+}
+
+.nav {
+  width: 100%;
+}
+
+main {
+  padding: 2rem;
+  flex: 1;
+}
+
+footer {
+  background: var(--header-footer-background);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
