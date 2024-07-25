@@ -1,0 +1,139 @@
+---
+const title = "Onur Kantarci - Portfolio";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="page-container">
+          <li class="onurk">onurk.dev</li>
+          <li><a class="home" href="/">Home</a></li>
+          <li><a class="about" href="/about">About</a></li>
+          <li><a class="projects" href="/projects">Projects</a></li>
+          <li><a class="contact" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>&copy; 2024 Onur Kantarci</p>
+      <a
+        href="https://github.com/onurkantarci"
+        target="_blank"
+        class="social-icon github">GitHub</a
+      >
+      <a
+        href="https://linkedin.com/in/onur-kantarci"
+        target="_blank"
+        class="social-icon linkedin">LinkedIn</a
+      >
+    </footer>
+  </body>
+</html>
+
+<style>
+  .page-container {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    align-items: center;
+    gap: 120px;
+  }
+  .onurk {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 700;
+  }
+  .home {
+    color: #c0c0c0;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 300ms;
+  }
+  .home:hover {
+    background-color: #f7e7ce8e;
+    color: white;
+  }
+  .about {
+    color: #c0c0c0;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 300ms;
+  }
+  .about:hover {
+    background-color: #f7e7ce8e;
+    color: white;
+  }
+  .projects {
+    color: #c0c0c0;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 300ms;
+  }
+  .projects:hover {
+    background-color: #f7e7ce8e;
+    color: white;
+  }
+  .contact {
+    color: #c0c0c0;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 300ms;
+  }
+  .contact:hover {
+    background-color: #f7e7ce8e;
+    color: white;
+  }
+  #theme-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 30px;
+  }
+  #theme-toggle:hover {
+    color: #000;
+    cursor: pointer;
+  }
+  .social-media {
+    margin: 40px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .social-icon {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  .social-icon.github:hover {
+    background: #333;
+  }
+
+  .social-icon.linkedin:hover {
+    background: #0077b5;
+  }
+
+  .social-icon.twitter:hover {
+    background: #1da1f2;
+  }
+</style>

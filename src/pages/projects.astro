@@ -1,0 +1,171 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="projects">
+    <h2 class="projects-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="/public/pictures/1713958964122.jpeg" alt="Project 1" />
+        <div class="project-info">
+          <h3>Money Tracker</h3>
+          <p>
+            Track your finances easily with Vue.js and TypeScript. Dexie.js
+            powers seamless storage (indexed db) integration, keeping your data
+            private on browser without needing a backend. Simplifies managing
+            income and expenses with a user-friendly interface to stay on top of
+            your financial health.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/public/pictures/1706536108208.jpeg" alt="Project 1" />
+        <div class="project-info">
+          <h3>WatchUp</h3>
+          <p>
+            App for discovering trending movies and managing your personal
+            watchlist. Developed using TMDB API and React.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/path/to/project1.png" alt="Project 1" />
+        <div class="project-info">
+          <h3>API with JWT Authentication (Express.js)</h3>
+          <p>
+            This project uses Express.js, and for authentication, it employs JWT
+            (JSON Web Token). Users log in with their credentials, and if
+            verified, they get this special token. With it, they can access
+            protected parts of the app without logging in repeatedly. Lastly,
+            users can log in and out. Logging in grants access, while logging
+            out invalidates the token, ensuring security.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/path/to/project1.png" alt="Project 1" />
+        <div class="project-info">
+          <h3>API with JWT Authentication (Express.js)</h3>
+          <p>
+            This project uses Express.js, and for authentication, it employs JWT
+            (JSON Web Token). Users log in with their credentials, and if
+            verified, they get this special token. With it, they can access
+            protected parts of the app without logging in repeatedly. Lastly,
+            users can log in and out. Logging in grants access, while logging
+            out invalidates the token, ensuring security.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/path/to/project1.png" alt="Project 1" />
+        <div class="project-info">
+          <h3>API with JWT Authentication (Express.js)</h3>
+          <p>
+            This project uses Express.js, and for authentication, it employs JWT
+            (JSON Web Token). Users log in with their credentials, and if
+            verified, they get this special token. With it, they can access
+            protected parts of the app without logging in repeatedly. Lastly,
+            users can log in and out. Logging in grants access, while logging
+            out invalidates the token, ensuring security.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/path/to/project1.png" alt="Project 1" />
+        <div class="project-info">
+          <h3>API with JWT Authentication (Express.js)</h3>
+          <p>
+            This project uses Express.js, and for authentication, it employs JWT
+            (JSON Web Token). Users log in with their credentials, and if
+            verified, they get this special token. With it, they can access
+            protected parts of the app without logging in repeatedly. Lastly,
+            users can log in and out. Logging in grants access, while logging
+            out invalidates the token, ensuring security.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/path/to/project1.png" alt="Project 1" />
+        <div class="project-info">
+          <h3>API with JWT Authentication (Express.js)</h3>
+          <p>
+            This project uses Express.js, and for authentication, it employs JWT
+            (JSON Web Token). Users log in with their credentials, and if
+            verified, they get this special token. With it, they can access
+            protected parts of the app without logging in repeatedly. Lastly,
+            users can log in and out. Logging in grants access, while logging
+            out invalidates the token, ensuring security.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/path/to/project1.png" alt="Project 1" />
+        <div class="project-info">
+          <h3>API with JWT Authentication (Express.js)</h3>
+          <p>
+            This project uses Express.js, and for authentication, it employs JWT
+            (JSON Web Token). Users log in with their credentials, and if
+            verified, they get this special token. With it, they can access
+            protected parts of the app without logging in repeatedly. Lastly,
+            users can log in and out. Logging in grants access, while logging
+            out invalidates the token, ensuring security.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .projects {
+    animation: fadeIn 500ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 80%;
+    font-size: 20px;
+  }
+  .projects-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .project-grid {
+    display: grid;
+    margin: 0 350px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+  }
+
+  .project-card {
+    background: #444;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    padding: 15px;
+  }
+
+  .project-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #f1c40f;
+  }
+
+  .project-info p {
+    color: #ccc;
+  }
+</style>
