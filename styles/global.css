@@ -76,3 +76,6 @@ footer {
   padding: 1rem;
   width: 100%;
 }
+
+@media (max-width: 640px) {
+}
