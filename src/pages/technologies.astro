@@ -91,22 +91,8 @@ import Layout from "../layouts/Layout.astro";
       </a>
       <a href="https://git-scm.com/">
         <img
-          src="public/pictures/git-svgrepo-com.svg"
+          src="public/pictures/github-color-svgrepo-com.svg"
           alt="Git"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://restfulapi.net/">
-        <img
-          src="public/pictures/rest-api-svgrepo-com.svg"
-          alt="REST API"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://oauth.net/">
-        <img
-          src="public/pictures/oauth-svgrepo-com.svg"
-          alt="OAuth"
           class="tech-icon"
         />
       </a>
@@ -124,13 +110,6 @@ import Layout from "../layouts/Layout.astro";
           class="tech-icon"
         />
       </a>
-      <a href="https://websockets.org/">
-        <img
-          src="public/pictures/websocket-svgrepo-com.svg"
-          alt="WebSocket"
-          class="tech-icon"
-        />
-      </a>
     </div>
   </section>
 </Layout>
@@ -138,8 +117,8 @@ import Layout from "../layouts/Layout.astro";
 <style>
   .technologies-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 30px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -148,6 +127,9 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .tech-icon {
+    border: 1px solid #2ac67041;
+    background: #161617;
+    padding: 20px;
     max-width: 100px;
     max-height: 100px;
     object-fit: contain;

@@ -1,5 +1,6 @@
 ---
 const title = "Onur Kantarci - Portfolio";
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -13,20 +14,31 @@ const title = "Onur Kantarci - Portfolio";
       href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
       <nav>
         <ul class="page-container">
-          <li class="onurk">onurk.dev</li>
-          <li><a class="home" href="/">Home</a></li>
-          <li><a class="about" href="/about">About</a></li>
-          <li><a class="projects" href="/projects">Projects</a></li>
-          <li><a class="contact" href="/contact">Contact</a></li>
+          <li><a class="onurk" href="/">onurk.dev</a></li>
+          <li>
+            <a class={currentPath === "/" ? "home active" : "home"} href="/"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class={currentPath === "/about" ? "about active" : "about"}
+              href="/about">About</a
+            >
+          </li>
+          <li>
+            <a
+              class={currentPath === "/projects"
+                ? "projects active"
+                : "projects"}
+              href="/projects">Projects</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -60,46 +72,29 @@ const title = "Onur Kantarci - Portfolio";
   .onurk {
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-weight: 700;
+    text-decoration: none;
+    color: #fff;
   }
-  .home {
-    color: #c0c0c0;
-    font-weight: 700;
-    border-radius: 6px;
-    transition: background-color 300ms;
-  }
-  .home:hover {
-    background-color: #f7e7ce8e;
-    color: white;
-  }
-  .about {
-    color: #c0c0c0;
-    font-weight: 700;
-    border-radius: 6px;
-    transition: background-color 300ms;
-  }
-  .about:hover {
-    background-color: #f7e7ce8e;
-    color: white;
-  }
-  .projects {
-    color: #c0c0c0;
-    font-weight: 700;
-    border-radius: 6px;
-    transition: background-color 300ms;
-  }
-  .projects:hover {
-    background-color: #f7e7ce8e;
-    color: white;
-  }
+  .home,
+  .about,
+  .projects,
   .contact {
     color: #c0c0c0;
     font-weight: 700;
     border-radius: 6px;
     transition: background-color 300ms;
+    padding: 5px 15px;
+    text-decoration: none;
   }
+  .home:hover,
+  .about:hover,
+  .projects:hover,
   .contact:hover {
-    background-color: #f7e7ce8e;
-    color: white;
+    color: #14723e;
+  }
+  .active {
+    background-color: #2ac670;
+    color: black;
   }
   #theme-toggle {
     background-color: #333;
@@ -124,16 +119,12 @@ const title = "Onur Kantarci - Portfolio";
     border-radius: 5px;
     transition: background 0.3s;
   }
-
   .social-icon.github:hover {
-    background: #333;
+    background: #2ac670;
+    color: #000000;
   }
-
   .social-icon.linkedin:hover {
-    background: #0077b5;
-  }
-
-  .social-icon.twitter:hover {
-    background: #1da1f2;
+    background: #2ac670;
+    color: #000000;
   }
 </style>

@@ -8,7 +8,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="whole-container">
       <div class="index-main">
         <div class="name-flag">
-          <h1>ONUR KANTARCI.</h1>
+          <h1 class="onur-fullname">ONUR KANTARCI.</h1>
           <a href="https://en.wikipedia.org/wiki/Kosovo">
             <img
               class="flag"
@@ -17,6 +17,7 @@ import Layout from "../layouts/Layout.astro";
             />
           </a>
         </div>
+        <h4 class="email">onur.kantarci@hotmail.com</h4>
         <h2 class="index-title">
           A <span class="full-stack">FULL-STACK DEVELOPER 👨🏻‍💻</span> AND <span
             class="trainee-law">TRAINEE LAWYER ⚖️</span
@@ -34,7 +35,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <div class="resume-container">
       <a
-        href="https://www.mediafire.com/file/7qpihwavwlrycez/Onur-Kantarci-Resume.pdf/file"
+        href="public/resume/Onur-Kantarci-Resume.pdf"
         download
         class="resume-download">Download Resume</a
       >
@@ -60,7 +61,7 @@ import Layout from "../layouts/Layout.astro";
         deletingEffect();
         return false;
       }
-      timer = setTimeout(loopTyping, 200);
+      timer = setTimeout(loopTyping, 150);
     };
     loopTyping();
   }
@@ -84,7 +85,7 @@ import Layout from "../layouts/Layout.astro";
         typingEffect();
         return false;
       }
-      timer = setTimeout(loopDeleting, 200);
+      timer = setTimeout(loopDeleting, 100);
     };
     loopDeleting();
   }
@@ -93,30 +94,66 @@ import Layout from "../layouts/Layout.astro";
 </script>
 
 <style>
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #typing::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+
+  .index-main {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+
   h1,
   p {
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
     font-size: 48px;
   }
 
+  .email {
+    color: #2ac670;
+    margin-bottom: 60px;
+  }
+
+  .onur-fullname {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+
   .index-title {
-    color: #ffffff7e;
+    color: #eed9f9;
     display: flex;
     align-items: center;
     gap: 18px;
+    font-weight: 600;
   }
 
   p {
     font-size: 34px;
-    color: #ffffff42;
+    color: #a7a7a8;
+    font-weight: 400;
+    line-height: 1.4;
   }
+
   .whole-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 50%;
+    margin-top: 60px;
   }
   .name-flag {
     display: flex;
@@ -128,6 +165,7 @@ import Layout from "../layouts/Layout.astro";
     width: 25px;
     height: 25px;
     object-fit: cover;
+    margin-top: 40px;
   }
   .flag:hover {
     cursor: pointer;
@@ -151,48 +189,51 @@ import Layout from "../layouts/Layout.astro";
     z-index: 1;
   }
   .resume-download {
-    color: white;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     display: inline-block;
-    padding: 10px 20px;
-    background: #1c8151;
+    padding: 14px 24px;
+    background-color: #161617;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0)
+    );
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 7px;
     transition: background 0.3s;
   }
   .resume-download:hover {
-    background: #4de7a6;
+    background: #2ac670;
+    color: black;
   }
   .index-main {
     animation: fadeIn 500ms ease-in-out;
   }
   .full-stack {
-    background-color: #1c8151;
-    color: #4de7a6;
-    font-size: 22px;
-    padding: 5px;
-    border-radius: 3px;
+    border: 2px dashed #2d2d30;
+    color: #2ac670;
+    background-color: #1f1f21;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   .trainee-law {
-    background-color: #811c1c;
-    color: #e74d4d;
-    font-size: 22px;
-    padding: 5px;
-    border-radius: 3px;
+    color: #e65f3f;
+    border: 2px dashed #2d2d30;
+    background-color: #1f1f21;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   .yellow-highlight {
-    background-color: #fff;
-    color: black;
-    text-decoration: none;
-    transition: background-color 100ms;
-    border-radius: 3px;
+    color: #f2f2f2;
+    border-radius: 10px;
   }
   .yellow-highlight:hover {
-    background-color: grey;
+    color: #2ac670;
   }
 </style>

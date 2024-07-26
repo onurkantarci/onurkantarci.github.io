@@ -11,36 +11,39 @@ import Layout from "../layouts/Layout.astro";
         class="profile-pic"
       />
       <h1>About Me</h1>
-      <p>
-        Hello! I'm Onur Kantarci, a passionate and dedicated full-stack
-        developer from Prizren, Kosovo. With a background in law and a
-        self-taught journey into the world of web development, I have developed
-        a diverse skill set that allows me to tackle complex projects with
-        creativity and precision.
-      </p>
-      <p>
-        My journey in tech began with a deep curiosity and drive to create
-        impactful digital solutions. Over the past few years, I have honed my
-        skills in various technologies, including Vue, React, HTML, CSS,
-        JavaScript, TypeScript, and Python. My expertise extends to building
-        robust backend systems with Express.js, managing databases with MongoDB
-        and PostgreSQL, and containerizing applications with Docker for seamless
-        deployment.
-      </p>
-      <p>
-        I've had the privilege of learning from a senior full-stack developer
-        and being mentored by my brother, which has significantly shaped my
-        approach to development. I enjoy taking on freelance projects where I
-        can apply my knowledge and continue to grow.
-      </p>
-      <p>
-        Some of my notable projects include a comprehensive Vue-Express Docker
-        setup, a Python-based task scheduling system, a secure Express.js
-        application with DDoS protection, and a variety of web applications
-        featuring authentication, data management, and real-time communication.
-      </p>
+      <div class="text-section">
+        <p>
+          Hello! I'm Onur Kantarci, a passionate and dedicated full-stack
+          developer from Prizren, Kosovo. With a background in law and a
+          self-taught journey into the world of web development, I have
+          developed a diverse skill set that allows me to tackle complex
+          projects with creativity and precision.
+        </p>
+        <p>
+          My journey in tech began with a deep curiosity and drive to create
+          impactful digital solutions. Over the past few years, I have honed my
+          skills in various technologies, including Vue, React, HTML, CSS,
+          JavaScript, TypeScript, and Python. My expertise extends to building
+          robust backend systems with Express.js, managing databases with
+          MongoDB and PostgreSQL, and containerizing applications with Docker
+          for seamless deployment.
+        </p>
+        <p>
+          I've had the privilege of learning from a senior full-stack developer
+          and being mentored by my brother, which has significantly shaped my
+          approach to development. I enjoy taking on freelance projects where I
+          can apply my knowledge and continue to grow.
+        </p>
+        <p>
+          Some of my notable projects include a comprehensive Vue-Express Docker
+          setup, a Python-based task scheduling system, a secure Express.js
+          application with DDoS protection, and a variety of web applications
+          featuring authentication, data management, and real-time
+          communication.
+        </p>
+      </div>
       <div class="skills">
-        <h2>Skills</h2>
+        <h2 class="skills-title">Skills</h2>
         <ul>
           <li>Vue.js</li>
           <li>React</li>
@@ -72,12 +75,12 @@ import Layout from "../layouts/Layout.astro";
     max-width: 60%;
     font-family: "Arial", sans-serif;
     line-height: 1.6;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 8px 10px rgba(50, 84, 135, 0.1);
+    padding: 20px 100px 20px 100px;
   }
 
   .profile-pic {
+    border: 1px dashed grey;
+    padding: 5px;
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -87,14 +90,34 @@ import Layout from "../layouts/Layout.astro";
 
   h1,
   h2 {
-    color: #333;
+    padding: 20px 100px 20px 100px;
+    border-radius: 10px;
+    background-color: #161617;
+    border: 1px dashed grey;
+    width: 82%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .text-section {
+    padding: 20px 100px 20px 100px;
+    border-radius: 10px;
+    border: 1px dashed grey;
+    background-color: #161617;
   }
 
   p,
   li {
     font-size: 1.1rem;
-    color: #555;
+    color: #d5d3d3;
     margin-bottom: 20px;
+  }
+
+  .skills-title {
+    padding: 20px 100px 20px 100px;
+    border-radius: 10px;
+    background-color: #161617;
+    border: 1px dashed grey;
   }
 
   .skills {
@@ -105,6 +128,10 @@ import Layout from "../layouts/Layout.astro";
   .skills ul {
     list-style: none;
     padding: 0;
+    padding: 20px 100px 20px 100px;
+    border-radius: 10px;
+    background-color: #161617;
+    border: 1px dashed grey;
   }
 
   .skills li {
