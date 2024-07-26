@@ -15,9 +15,8 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <h4 class="email">onur.kantarci@hotmail.com</h4>
         <h2 class="index-title">
-          A <span class="full-stack">FULL-STACK DEVELOPER 👨🏻‍💻</span> AND <span
-            class="trainee-law">TRAINEE LAWYER ⚖️</span
-          >
+          A <span class="full-stack">FULL-STACK DEVELOPER <span>👨🏻‍💻</span></span>
+          AND <span class="trainee-law">TRAINEE LAWYER <span>⚖️</span></span>
         </h2>
         <p>
           I'm Onur Kantarci, a full-stack developer and trainee lawyer with a
@@ -244,6 +243,20 @@ import Layout from "../layouts/Layout.astro";
       margin-bottom: 50px;
     }
 
+    .full-stack {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .trainee-law {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .name-flag {
       flex-direction: column;
       gap: 0px;
@@ -283,6 +296,12 @@ import Layout from "../layouts/Layout.astro";
     .resume-download {
       margin-right: 5px;
       font-size: 14px;
+    }
+
+    .index-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .whole-container {
