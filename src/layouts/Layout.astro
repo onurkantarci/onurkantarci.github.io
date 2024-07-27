@@ -19,6 +19,7 @@ const currentPath = Astro.url.pathname;
     <header>
       <nav>
         <ul class="page-container">
+          <h1>The current URL pathname is: {Astro.url.pathname}</h1>
           <li><a class="onurk" href="/">onurk.dev</a></li>
           <li>
             <a class={currentPath === "/" ? "home active" : "home"} href="/"
