@@ -27,16 +27,16 @@ const currentPath = Astro.url.pathname;
           </li>
           <li>
             <a
-              class={currentPath === "/about" ? "about active" : "about"}
-              href="/about">About</a
+              class={currentPath === "/about/" ? "about active" : "about"}
+              href="/about/">About</a
             >
           </li>
           <li>
             <a
-              class={currentPath === "/projects"
+              class={currentPath === "/projects/"
                 ? "projects active"
                 : "projects"}
-              href="/projects">Projects</a
+              href="/projects/">Projects</a
             >
           </li>
         </ul>
