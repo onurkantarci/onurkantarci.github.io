@@ -1,6 +1,6 @@
 ---
 const title = "Onur Kantarci";
-const currentPath = Astro.url.pathname;
+const currentLocale = Astro.currentLocale;
 ---
 
 <!doctype html>
@@ -11,7 +11,7 @@ const currentPath = Astro.url.pathname;
     <title>{title}</title>
     <link rel="stylesheet" href="/styles/global.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,26 +19,11 @@ const currentPath = Astro.url.pathname;
     <header>
       <nav>
         <ul class="page-container">
+          <h1>currentlocale: {currentLocale}</h1>
           <li><a class="onurk" href="/">onurk.dev</a></li>
-          <li>
-            <a class={currentPath === "/" ? "home active" : "home"} href="/"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class={currentPath === "/about/" ? "about active" : "about"}
-              href="/about/">About</a
-            >
-          </li>
-          <li>
-            <a
-              class={currentPath === "/projects/"
-                ? "projects active"
-                : "projects"}
-              href="/projects/">Projects</a
-            >
-          </li>
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="/about/">About</a></li>
+          <li><a class="nav-link" href="/projects/">Projects</a></li>
         </ul>
       </nav>
     </header>
@@ -58,6 +43,19 @@ const currentPath = Astro.url.pathname;
         class="social-icon linkedin">LinkedIn</a
       >
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll(".nav-link");
+        const currentPath = window.location.pathname;
+
+        links.forEach((link) => {
+          if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
 
@@ -75,9 +73,7 @@ const currentPath = Astro.url.pathname;
     text-decoration: none;
     color: #fff;
   }
-  .home,
-  .about,
-  .projects {
+  .nav-link {
     color: #c0c0c0;
     font-weight: 700;
     border-radius: 6px;
@@ -85,9 +81,7 @@ const currentPath = Astro.url.pathname;
     padding: 5px 15px;
     text-decoration: none;
   }
-  .home:hover,
-  .about:hover,
-  .projects:hover {
+  .nav-link:hover {
     color: #14723e;
   }
   .active {
