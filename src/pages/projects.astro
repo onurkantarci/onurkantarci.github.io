@@ -333,6 +333,8 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .project-info {
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 2;
     padding: 15px;
@@ -347,11 +349,16 @@ import Layout from "../layouts/Layout.astro";
     font-weight: 700;
     color: #2ac670;
     letter-spacing: 0.5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .project-info p {
     color: #ddd;
     line-height: 1.6;
+    flex-grow: 1;
   }
 
   @media (max-width: 640px) {
