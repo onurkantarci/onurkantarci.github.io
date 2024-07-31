@@ -294,9 +294,12 @@ import Layout from "../layouts/Layout.astro";
     transition:
       transform 0.3s ease,
       box-shadow 0.3s ease;
-    text-decoration: none;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .project-card::before {
@@ -349,10 +352,10 @@ import Layout from "../layouts/Layout.astro";
     font-weight: 700;
     color: #2ac670;
     letter-spacing: 0.5px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .project-info p {
