@@ -43,12 +43,10 @@ import Layout from "../layouts/Layout.astro";
         <div class="project-info">
           <h3>Python-Task-Scheduling</h3>
           <p>
-            This project is designed to facilitate efficient task scheduling and
-            management for backend operations using Python. By leveraging
-            Celery, a powerful distributed task queue, and RabbitMQ, a robust
-            message broker, the system ensures reliable execution of
-            asynchronous tasks. Docker is utilized to containerize the
-            application, providing a consistent and reproducible environment for
+            This project streamlines backend task scheduling and management with
+            Python. Using Celery for distributed task queuing and RabbitMQ as
+            the message broker, it ensures reliable asynchronous task execution.
+            Docker containerizes the application for consistent and reproducible
             deployment.
           </p>
         </div>
@@ -61,11 +59,9 @@ import Layout from "../layouts/Layout.astro";
         <div class="project-info">
           <h3>Money Tracker</h3>
           <p>
-            Track your finances easily with Vue.js and TypeScript. Dexie.js
-            powers seamless storage (indexed db) integration, keeping your data
-            private on browser without needing a backend. Simplifies managing
-            income and expenses with a user-friendly interface to stay on top of
-            your financial health.
+            Track your finances effortlessly with Vue.js and TypeScript.
+            Dexie.js ensures private, backend-free data storage. The
+            user-friendly interface simplifies managing income and expenses.
           </p>
         </div>
       </a>
@@ -90,12 +86,10 @@ import Layout from "../layouts/Layout.astro";
         <div class="project-info">
           <h3>API with JWT Authentication (Express.js)</h3>
           <p>
-            This project uses Express.js, and for authentication, it employs JWT
-            (JSON Web Token). Users log in with their credentials, and if
-            verified, they get this special token. With it, they can access
-            protected parts of the app without logging in repeatedly. Lastly,
-            users can log in and out. Logging in grants access, while logging
-            out invalidates the token, ensuring security.
+            This project uses Express.js with JWT for authentication. Verified
+            users receive a token to access protected parts of the app without
+            repeatedly logging in. Users can log in and out, with logging out
+            invalidating the token to ensure security.
           </p>
         </div>
       </a>
@@ -148,10 +142,10 @@ import Layout from "../layouts/Layout.astro";
         <div class="project-info">
           <h3>Full-stack Web App with JWT Authentication</h3>
           <p>
-            JWT Authentication Mono Repo Project is a comprehensive solution for
-            secure user authentication, encompassing both frontend and backend
-            components within a single repository. Utilizing JSON Web Tokens
-            (JWT), ensuring data privacy and integrity.
+            JWT Authentication Mono Repo Project provides secure user
+            authentication with frontend and backend components in a single
+            repository. It uses JSON Web Tokens (JWT) to ensure data privacy and
+            integrity.
           </p>
         </div>
       </a>
@@ -177,12 +171,9 @@ import Layout from "../layouts/Layout.astro";
         <div class="project-info">
           <h3>Image Resizing (MongoDB - Mongoose)</h3>
           <p>
-            This project is a Node.js application using Express for handling
-            image uploads, resizing them using Sharp, and storing metadata in
-            MongoDB. Users can upload images, specifying desired dimensions.
-            Resized images are saved locally, and their metadata is stored in
-            the database. Users can list all stored images, and are allowed to
-            download images by ID.
+            This Node.js app uses Express for image uploads, Sharp for resizing,
+            and MongoDB for metadata storage. Users can upload images with
+            specified dimensions, list all images, and download images by ID.
           </p>
         </div>
       </a>
@@ -209,12 +200,10 @@ import Layout from "../layouts/Layout.astro";
         <div class="project-info">
           <h3>Note App (PostgreSQL - Sequelize)</h3>
           <p>
-            This project is a web-based note-taking application built with a
-            modern technology stack: Backend: Nodejs, Express.js, PostgreSQL
-            Frontend: Vue.js, Typescript Features: Users can create, edit, and
-            delete notes. Notes are stored in a PostgreSQL database. This
-            project demonstrates full-stack development skills, integrating a
-            backend with a dynamic frontend.
+            This web-based note-taking app uses Node.js, Express.js, PostgreSQL,
+            Vue.js, and TypeScript. Users can create, edit, and delete notes,
+            which are stored in a PostgreSQL database. It showcases full-stack
+            development skills.
           </p>
         </div>
       </a>
@@ -297,7 +286,7 @@ import Layout from "../layouts/Layout.astro";
 
   .project-grid {
     display: grid;
-    margin: 0 100px;
+    margin: 0 50px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
   }
@@ -311,7 +300,6 @@ import Layout from "../layouts/Layout.astro";
       box-shadow 0.3s ease;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    height: 460px;
   }
 
   a {
@@ -368,7 +356,6 @@ import Layout from "../layouts/Layout.astro";
     font-weight: 700;
     color: #2ac670;
     letter-spacing: 0.5px;
-    height: 40px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
