@@ -3,451 +3,1086 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="projects">
-    <h2 class="projects-title">Projects</h2>
-    <div class="project-grid">
-      <a
-        href="https://github.com/onurkantarci/shopwise-go"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Shopwise GO</h3>
-          <p>
-            This Go-based web application, built with the Gin framework, allows
-            users to browse a list of stores and view each store's deals. By
+    <section class="page-wrap projects-page" aria-labelledby="projects-heading">
+        <div class="projects-hero">
+            <p class="eyebrow">Selected work & experiments</p>
+            <h1 class="page-title" id="projects-heading">
+                My <span>Projects.</span>
+            </h1>
+            <p class="lead">
+                A collection of projects built to learn, experiment, solve
+                problems, and turn ideas into real applications.
+            </p>
+        </div>
+        <div class="projects-toolbar">
+            <p class="project-count">
+                <span id="visible-count">23</span> PROJECTS
+            </p>
+            <label class="search-wrap"
+                ><span class="sr-only">Search projects</span><svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                    ><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"
+                    ></path></svg
+                ><input
+                    id="project-search"
+                    type="search"
+                    placeholder="Search projects..."
+                    autocomplete="off"
+                /></label
+            >
+        </div>
+        <div class="project-grid" id="project-grid">
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/shopwise-go"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Backend"
+                data-search="shopwise go this go-based web application, built with the gin framework, allows
+            users to browse a list of stores and view each store's deals. by
             clicking on a store, users can explore the available deals specific
-            to that store in a clean and responsive interface.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://onurk.dev/spotify-clone/"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Spotify Clone</h3>
-          <p>
-            Developed a Spotify UI clone using only HTML and CSS, replicating
+            to that store in a clean and responsive interface."
+            >
+                <div class="card-top">
+                    <span class="project-index">01 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Backend</span><h2>
+                        Shopwise GO
+                    </h2><p>
+                        This Go-based web application, built with the Gin
+                        framework, allows users to browse a list of stores and
+                        view each store&#x27;s deals. By clicking on a store,
+                        users can explore the available deals specific to that
+                        store in a clean and responsive interface.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://onurk.dev/spotify-clone/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="spotify clone developed a spotify ui clone using only html and css, replicating
             the layout, design elements, and visual aesthetics of the original
-            platform.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/quote-frontend"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Quote Generator - Frontend</h3>
-          <p>
-            A full-stack Quote Generator application built with Java, Spring
-            Boot on the backend, paired with Vue.js and TypeScript on the
-            frontend. It allows users to create, search, edit, and delete
-            quotes, featuring pagination and an intuitive user interface.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/quote_proj"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Quote Generator - Backend</h3>
-          <p>
-            A full-stack Quote Generator application built with Java, Spring
-            Boot on the backend, paired with Vue.js and TypeScript on the
-            frontend. It allows users to create, search, edit, and delete
-            quotes, featuring pagination and an intuitive user interface.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/mp3-maven"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>MP3-Metadata-Maven</h3>
-          <p>
-            A Maven-based Java project that extracts and displays metadata from
-            MP3 files using the mp3agic library. This tool provides a simple and
+            platform."
+            >
+                <div class="card-top">
+                    <span class="project-index">02 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Spotify Clone
+                    </h2><p>
+                        Developed a Spotify UI clone using only HTML and CSS,
+                        replicating the layout, design elements, and visual
+                        aesthetics of the original platform.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/quote-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="quote generator - frontend a full-stack quote generator application built with java, spring
+            boot on the backend, paired with vue.js and typescript on the
+            frontend. it allows users to create, search, edit, and delete
+            quotes, featuring pagination and an intuitive user interface."
+            >
+                <div class="card-top">
+                    <span class="project-index">03 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Quote Generator - Frontend
+                    </h2><p>
+                        A full-stack Quote Generator application built with
+                        Java, Spring Boot on the backend, paired with Vue.js and
+                        TypeScript on the frontend. It allows users to create,
+                        search, edit, and delete quotes, featuring pagination
+                        and an intuitive user interface.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/quote_proj"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="quote generator - backend a full-stack quote generator application built with java, spring
+            boot on the backend, paired with vue.js and typescript on the
+            frontend. it allows users to create, search, edit, and delete
+            quotes, featuring pagination and an intuitive user interface."
+            >
+                <div class="card-top">
+                    <span class="project-index">04 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Quote Generator - Backend
+                    </h2><p>
+                        A full-stack Quote Generator application built with
+                        Java, Spring Boot on the backend, paired with Vue.js and
+                        TypeScript on the frontend. It allows users to create,
+                        search, edit, and delete quotes, featuring pagination
+                        and an intuitive user interface.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/mp3-maven"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Backend"
+                data-search="mp3-metadata-maven a maven-based java project that extracts and displays metadata from
+            mp3 files using the mp3agic library. this tool provides a simple and
             efficient way to analyze and view information such as artist, album,
-            title, and more.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/crypto-price-track"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Crypto-Price-Track-Angular</h3>
-          <p>
-            A web application built with Angular and SCSS for tracking real-time
-            cryptocurrency prices. It features live updates, detailed charts,
+            title, and more."
+            >
+                <div class="card-top">
+                    <span class="project-index">05 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Backend</span><h2>
+                        MP3-Metadata-Maven
+                    </h2><p>
+                        A Maven-based Java project that extracts and displays
+                        metadata from MP3 files using the mp3agic library. This
+                        tool provides a simple and efficient way to analyze and
+                        view information such as artist, album, title, and more.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/crypto-price-track"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="crypto-price-track-angular a web application built with angular and scss for tracking real-time
+            cryptocurrency prices. it features live updates, detailed charts,
             and market trends, providing users with the latest information on
-            various cryptocurrencies.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/product-management-angular"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Product-Management-Angular</h3>
-          <p>
-            This project is a full-stack web application that allows users to
-            add, delete, and edit products. It consists of a frontend built with
-            Angular and SCSS, and a backend built with Express.js.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/python-task-scheduling"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Python-Task-Scheduling</h3>
-          <p>
-            This project streamlines backend task scheduling and management with
-            Python. Using Celery for distributed task queuing and RabbitMQ as
+            various cryptocurrencies."
+            >
+                <div class="card-top">
+                    <span class="project-index">06 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Crypto-Price-Track-Angular
+                    </h2><p>
+                        A web application built with Angular and SCSS for
+                        tracking real-time cryptocurrency prices. It features
+                        live updates, detailed charts, and market trends,
+                        providing users with the latest information on various
+                        cryptocurrencies.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/product-management-angular"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="product-management-angular this project is a full-stack web application that allows users to
+            add, delete, and edit products. it consists of a frontend built with
+            angular and scss, and a backend built with express.js."
+            >
+                <div class="card-top">
+                    <span class="project-index">07 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Product-Management-Angular
+                    </h2><p>
+                        This project is a full-stack web application that allows
+                        users to add, delete, and edit products. It consists of
+                        a frontend built with Angular and SCSS, and a backend
+                        built with Express.js.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/python-task-scheduling"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Backend"
+                data-search="python-task-scheduling this project streamlines backend task scheduling and management with
+            python. using celery for distributed task queuing and rabbitmq as
             the message broker, it ensures reliable asynchronous task execution.
-            Docker containerizes the application for consistent and reproducible
-            deployment.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/money-tracker-app"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Money Tracker</h3>
-          <p>
-            Track your finances effortlessly with Vue.js and TypeScript.
-            Dexie.js ensures private, backend-free data storage. The
-            user-friendly interface simplifies managing income and expenses.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/watchup"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>WatchUp</h3>
-          <p>
-            App for discovering trending movies and managing your personal
-            watchlist. Developed using TMDB API and React.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/expressjs-jwt-auth"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>API with JWT Authentication (Express.js)</h3>
-          <p>
-            This project uses Express.js with JWT for authentication. Verified
+            docker containerizes the application for consistent and reproducible
+            deployment."
+            >
+                <div class="card-top">
+                    <span class="project-index">08 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Backend</span><h2>
+                        Python-Task-Scheduling
+                    </h2><p>
+                        This project streamlines backend task scheduling and
+                        management with Python. Using Celery for distributed
+                        task queuing and RabbitMQ as the message broker, it
+                        ensures reliable asynchronous task execution. Docker
+                        containerizes the application for consistent and
+                        reproducible deployment.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/money-tracker-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="money tracker track your finances effortlessly with vue.js and typescript.
+            dexie.js ensures private, backend-free data storage. the
+            user-friendly interface simplifies managing income and expenses."
+            >
+                <div class="card-top">
+                    <span class="project-index">09 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Money Tracker
+                    </h2><p>
+                        Track your finances effortlessly with Vue.js and
+                        TypeScript. Dexie.js ensures private, backend-free data
+                        storage. The user-friendly interface simplifies managing
+                        income and expenses.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/watchup"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="watchup app for discovering trending movies and managing your personal
+            watchlist. developed using tmdb api and react."
+            >
+                <div class="card-top">
+                    <span class="project-index">10 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>WatchUp</h2><p
+                    >
+                        App for discovering trending movies and managing your
+                        personal watchlist. Developed using TMDB API and React.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/expressjs-jwt-auth"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Security"
+                data-search="api with jwt authentication (express.js) this project uses express.js with jwt for authentication. verified
             users receive a token to access protected parts of the app without
-            repeatedly logging in. Users can log in and out, with logging out
-            invalidating the token to ensure security.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/chatapp-websocket-fullstack"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Chat App (Websocket - Socket.IO)</h3>
-          <p>
-            A dynamic chat application seamlessly integrating WebSocket
-            technology with the power and flexibility of Vue.js.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/express-ddos-protection"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Express-DDOS-Protection</h3>
-          <p>
-            A secure web application using Express.js, implementing Helmet for
-            enhanced security headers, rate limiting to mitigate potential DDoS
-            attacks, and IP filtering for access control.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/file-upload-fullstack"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>File Upload Full Stack (MongoDB - Mongoose)</h3>
-          <p>
-            This project is a file upload service built using Node.js with
-            Express. It provides functionality for users to upload image files
-            (PNG, JPEG, JPG, GIF) to a MongoDB database.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/jwt-full-stack"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Full-stack Web App with JWT Authentication</h3>
-          <p>
-            JWT Authentication Mono Repo Project provides secure user
+            repeatedly logging in. users can log in and out, with logging out
+            invalidating the token to ensure security."
+            >
+                <div class="card-top">
+                    <span class="project-index">11 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Security</span><h2>
+                        API with JWT Authentication (Express.js)
+                    </h2><p>
+                        This project uses Express.js with JWT for
+                        authentication. Verified users receive a token to access
+                        protected parts of the app without repeatedly logging
+                        in. Users can log in and out, with logging out
+                        invalidating the token to ensure security.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/chatapp-websocket-fullstack"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="chat app (websocket - socket.io) a dynamic chat application seamlessly integrating websocket
+            technology with the power and flexibility of vue.js."
+            >
+                <div class="card-top">
+                    <span class="project-index">12 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Chat App (Websocket - Socket.IO)
+                    </h2><p>
+                        A dynamic chat application seamlessly integrating
+                        WebSocket technology with the power and flexibility of
+                        Vue.js.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/express-ddos-protection"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Security"
+                data-search="express-ddos-protection a secure web application using express.js, implementing helmet for
+            enhanced security headers, rate limiting to mitigate potential ddos
+            attacks, and ip filtering for access control."
+            >
+                <div class="card-top">
+                    <span class="project-index">13 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Security</span><h2>
+                        Express-DDOS-Protection
+                    </h2><p>
+                        A secure web application using Express.js, implementing
+                        Helmet for enhanced security headers, rate limiting to
+                        mitigate potential DDoS attacks, and IP filtering for
+                        access control.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/file-upload-fullstack"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Backend"
+                data-search="file upload full stack (mongodb - mongoose) this project is a file upload service built using node.js with
+            express. it provides functionality for users to upload image files
+            (png, jpeg, jpg, gif) to a mongodb database."
+            >
+                <div class="card-top">
+                    <span class="project-index">14 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Backend</span><h2>
+                        File Upload Full Stack (MongoDB - Mongoose)
+                    </h2><p>
+                        This project is a file upload service built using
+                        Node.js with Express. It provides functionality for
+                        users to upload image files (PNG, JPEG, JPG, GIF) to a
+                        MongoDB database.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/jwt-full-stack"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Security"
+                data-search="full-stack web app with jwt authentication jwt authentication mono repo project provides secure user
             authentication with frontend and backend components in a single
-            repository. It uses JSON Web Tokens (JWT) to ensure data privacy and
-            integrity.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/python-qr"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Python-QR</h3>
-          <p>
-            A Python-based QR code generator that converts text, image or vcards
-            into QR codes, enabling easy data sharing and quick access through
-            scanning.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/image-resizing"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Image Resizing (MongoDB - Mongoose)</h3>
-          <p>
-            This Node.js app uses Express for image uploads, Sharp for resizing,
-            and MongoDB for metadata storage. Users can upload images with
-            specified dimensions, list all images, and download images by ID.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/expressjs-mongodb-vuejs"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Note App (MongoDB - Mongoose)</h3>
-          <p>
-            A note-taking application built with a backend and a frontend.
-            Utilizing MongoDB and Mongoose for robust data management,
-            Express.js for a flexible and efficient server, and Vue.js for a
-            dynamic and user-friendly interface.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/expressjs-postgresql-vuejs"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Note App (PostgreSQL - Sequelize)</h3>
-          <p>
-            This web-based note-taking app uses Node.js, Express.js, PostgreSQL,
-            Vue.js, and TypeScript. Users can create, edit, and delete notes,
-            which are stored in a PostgreSQL database. It showcases full-stack
-            development skills.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/OAuth"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>OAuth Login Using Google, Github (MongoDB - Mongoose)</h3>
-          <p>
-            Full-stack application with Google and GitHub OAuth authentication,
-            using JWT, MongoDB, Express.js, and Passport.js for the backend, and
-            Vite, Vue, and TypeScript for the frontend.
-          </p>
-        </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/python-url-shortener"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Python-URL-Shortener</h3>
-          <p>
-            This project is a Flask-based web application that allows users to
-            generate short URLs from long ones. Built with Python, it provides a
+            repository. it uses json web tokens (jwt) to ensure data privacy and
+            integrity."
+            >
+                <div class="card-top">
+                    <span class="project-index">15 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Security</span><h2>
+                        Full-stack Web App with JWT Authentication
+                    </h2><p>
+                        JWT Authentication Mono Repo Project provides secure
+                        user authentication with frontend and backend components
+                        in a single repository. It uses JSON Web Tokens (JWT) to
+                        ensure data privacy and integrity.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/python-qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Backend"
+                data-search="python-qr a python-based qr code generator that converts text, image or vcards
+            into qr codes, enabling easy data sharing and quick access through
+            scanning."
+            >
+                <div class="card-top">
+                    <span class="project-index">16 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Backend</span><h2>
+                        Python-QR
+                    </h2><p>
+                        A Python-based QR code generator that converts text,
+                        image or vcards into QR codes, enabling easy data
+                        sharing and quick access through scanning.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/image-resizing"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Backend"
+                data-search="image resizing (mongodb - mongoose) this node.js app uses express for image uploads, sharp for resizing,
+            and mongodb for metadata storage. users can upload images with
+            specified dimensions, list all images, and download images by id."
+            >
+                <div class="card-top">
+                    <span class="project-index">17 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Backend</span><h2>
+                        Image Resizing (MongoDB - Mongoose)
+                    </h2><p>
+                        This Node.js app uses Express for image uploads, Sharp
+                        for resizing, and MongoDB for metadata storage. Users
+                        can upload images with specified dimensions, list all
+                        images, and download images by ID.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/expressjs-mongodb-vuejs"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="note app (mongodb - mongoose) a note-taking application built with a backend and a frontend.
+            utilizing mongodb and mongoose for robust data management,
+            express.js for a flexible and efficient server, and vue.js for a
+            dynamic and user-friendly interface."
+            >
+                <div class="card-top">
+                    <span class="project-index">18 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Note App (MongoDB - Mongoose)
+                    </h2><p>
+                        A note-taking application built with a backend and a
+                        frontend. Utilizing MongoDB and Mongoose for robust data
+                        management, Express.js for a flexible and efficient
+                        server, and Vue.js for a dynamic and user-friendly
+                        interface.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/expressjs-postgresql-vuejs"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="note app (postgresql - sequelize) this web-based note-taking app uses node.js, express.js, postgresql,
+            vue.js, and typescript. users can create, edit, and delete notes,
+            which are stored in a postgresql database. it showcases full-stack
+            development skills."
+            >
+                <div class="card-top">
+                    <span class="project-index">19 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Note App (PostgreSQL - Sequelize)
+                    </h2><p>
+                        This web-based note-taking app uses Node.js, Express.js,
+                        PostgreSQL, Vue.js, and TypeScript. Users can create,
+                        edit, and delete notes, which are stored in a PostgreSQL
+                        database. It showcases full-stack development skills.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/OAuth"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Security"
+                data-search="oauth login using google, github (mongodb - mongoose) full-stack application with google and github oauth authentication,
+            using jwt, mongodb, express.js, and passport.js for the backend, and
+            vite, vue, and typescript for the frontend."
+            >
+                <div class="card-top">
+                    <span class="project-index">20 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Security</span><h2>
+                        OAuth Login Using Google, Github (MongoDB - Mongoose)
+                    </h2><p>
+                        Full-stack application with Google and GitHub OAuth
+                        authentication, using JWT, MongoDB, Express.js, and
+                        Passport.js for the backend, and Vite, Vue, and
+                        TypeScript for the frontend.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/python-url-shortener"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Backend"
+                data-search="python-url-shortener this project is a flask-based web application that allows users to
+            generate short urls from long ones. built with python, it provides a
             simple and efficient way to create and manage shortened links,
-            making it easy to share and track URLs.
-          </p>
+            making it easy to share and track urls."
+            >
+                <div class="card-top">
+                    <span class="project-index">21 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Backend</span><h2>
+                        Python-URL-Shortener
+                    </h2><p>
+                        This project is a Flask-based web application that
+                        allows users to generate short URLs from long ones.
+                        Built with Python, it provides a simple and efficient
+                        way to create and manage shortened links, making it easy
+                        to share and track URLs.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/todolist-vue"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="todoapp app for creating todolist and managing current todos. developed
+            using vite and vue.js"
+            >
+                <div class="card-top">
+                    <span class="project-index">22 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>TodoApp</h2><p
+                    >
+                        App for creating todolist and managing current todos.
+                        Developed using Vite and Vue.js
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
+            <a
+                class="project-card"
+                href="https://github.com/onurkantarci/docker-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-category="Frontend"
+                data-search="vue-express docker setup a full-stack web app with a vue.js frontend and an express.js
+            backend, both containerized using docker for easy orchestration and
+            seamless communication."
+            >
+                <div class="card-top">
+                    <span class="project-index">23 / PROJECT</span><span
+                        class="project-arrow"
+                        aria-hidden="true">↗</span
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="project-type">Frontend</span><h2>
+                        Vue-Express Docker Setup
+                    </h2><p>
+                        A full-stack web app with a Vue.js frontend and an
+                        Express.js backend, both containerized using Docker for
+                        easy orchestration and seamless communication.
+                    </p>
+                </div>
+                <span class="card-bottom"
+                    >VIEW PROJECT <span aria-hidden="true">↗</span></span
+                >
+            </a>
         </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/todolist-vue"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>TodoApp</h3>
-          <p>
-            App for creating todolist and managing current todos. Developed
-            using Vite and Vue.js
-          </p>
+        <p class="no-results" id="no-results" hidden>
+            No projects match that search. Try a different keyword.
+        </p>
+        <div class="projects-end">
+            <span>HAVE SOMETHING IN MIND?</span><a
+                href="mailto:onur.kantarci@hotmail.com"
+                class="action"
+                >Let's build something <span aria-hidden="true">↗</span></a
+            >
         </div>
-      </a>
-      <a
-        href="https://github.com/onurkantarci/docker-project"
-        class="project-card"
-        target="_blank"
-      >
-        <div class="project-info">
-          <h3>Vue-Express Docker Setup</h3>
-          <p>
-            A full-stack web app with a Vue.js frontend and an Express.js
-            backend, both containerized using Docker for easy orchestration and
-            seamless communication.
-          </p>
-        </div>
-      </a>
-    </div>
-  </section>
+    </section>
 </Layout>
 
+<script>
+    const searchInput =
+        document.querySelector<HTMLInputElement>("#project-search");
+    const countElement = document.querySelector<HTMLElement>("#visible-count");
+    const noResults = document.querySelector<HTMLElement>("#no-results");
+    const cards = [...document.querySelectorAll<HTMLElement>(".project-card")];
+    searchInput?.addEventListener("input", () => {
+        const term = searchInput.value.trim().toLocaleLowerCase();
+        let visible = 0;
+        cards.forEach((card) => {
+            const matches = (card.dataset.search || "").includes(term);
+            card.hidden = !matches;
+            if (matches) visible++;
+        });
+        if (countElement) countElement.textContent = String(visible);
+        if (noResults) noResults.hidden = visible !== 0;
+    });
+</script>
+
 <style>
-  .projects {
-    animation: fadeIn 500ms ease-in-out;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 80%;
-    font-size: 20px;
-  }
-
-  .projects-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-
-  .project-grid {
-    display: grid;
-    margin: 0 50px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 40px;
-  }
-
-  .project-card {
-    background: #1e1e1f;
-    border-radius: 8px;
-    overflow: hidden;
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .project-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.1)
-    );
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  .project-card:hover {
-    transform: scale(1.05) rotate(1deg);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  }
-
-  .project-card:hover::before {
-    opacity: 1;
-  }
-
-  .project-card img {
-    border-bottom: 2px solid #2ac670;
-    border-radius: 8px 8px 0 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    padding: 15px;
-  }
-
-  .project-info h3 {
-    border-bottom: 1px solid #2ac670;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2ac670;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .project-info p {
-    color: #ddd;
-    line-height: 1.6;
-    flex-grow: 1;
-  }
-
-  @media (max-width: 640px) {
-    .projects {
-      max-width: 100%;
+    .page-wrap {
+        position: relative;
+        width: min(1160px, calc(100% - 48px));
+        margin: 0 auto;
+        padding: 76px 0 110px;
+        font-family: "Roboto", sans-serif;
+        color: #f4f5f4;
+    }
+    .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 20px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 2.6px;
+        color: #2ac670;
+        text-transform: uppercase;
+    }
+    .eyebrow:before {
+        content: "";
+        display: inline-block;
+        width: 23px;
+        height: 2px;
+        background: #2ac670;
+    }
+    .page-title {
+        font-size: clamp(48px, 6.2vw, 90px);
+        line-height: 1.03;
+        letter-spacing: -0.065em;
+        margin: 0;
+        color: #f7f8f7;
+        font-weight: 800;
+    }
+    .page-title span {
+        color: #2ac670;
+    }
+    .lead {
+        max-width: 680px;
+        margin: 24px 0 0;
+        font-size: clamp(16px, 1.8vw, 19px);
+        line-height: 1.8;
+        color: #a5ada8;
+    }
+    .section-label {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        color: #2ac670;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+    }
+    .section-title {
+        font-size: clamp(27px, 3.5vw, 40px);
+        letter-spacing: -0.045em;
+        margin: 0;
+        color: #f3f5f4;
+        line-height: 1.2;
+    }
+    .action {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+        border: 1px solid #2ac670;
+        background: #2ac670;
+        color: #0b1710;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 13px;
+        border-radius: 10px;
+        padding: 14px 20px;
+        transition:
+            transform 0.2s,
+            background 0.2s;
+    }
+    .action:hover {
+        transform: translateY(-2px);
+        background: #53d890;
+    }
+    .action.secondary {
+        background: transparent;
+        color: #e3f1e8;
+        border-color: #35473b;
+    }
+    .action.secondary:hover {
+        background: #17231b;
+    }
+    :global(.site-shell) .page-wrap a:focus-visible {
+        outline: 2px solid #2ac670;
+        outline-offset: 4px;
+    }
+    @media (max-width: 640px) {
+        .page-wrap {
+            width: calc(100% - 36px);
+            padding: 46px 0 75px;
+        }
+        .lead {
+            font-size: 16px;
+        }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .action {
+            transition: none;
+        }
     }
 
+    .projects-hero {
+        padding: 12px 0 58px;
+    }
+    .projects-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 22px;
+        margin-bottom: 22px;
+    }
+    .project-count {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        color: #97a49b;
+    }
+    .project-count span {
+        color: #2ac670;
+    }
+    .search-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: min(320px, 100%);
+        padding: 12px 15px;
+        background: #171b18;
+        border: 1px solid #303a33;
+        border-radius: 11px;
+        color: #83948a;
+        transition: border-color 0.2s;
+    }
+    .search-wrap:focus-within {
+        border-color: #2ac670;
+    }
+    .search-wrap input {
+        width: 100%;
+        background: transparent;
+        color: #f5f7f6;
+        border: 0;
+        outline: 0;
+        min-width: 0;
+        font: inherit;
+        font-size: 13px;
+    }
+    .search-wrap input::placeholder {
+        color: #79867c;
+    }
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+    }
     .project-grid {
-      margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 17px;
     }
-  }
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        min-height: 325px;
+        border: 1px solid #2b342e;
+        border-radius: 17px;
+        background: linear-gradient(145deg, #1a201b, #151816);
+        color: inherit;
+        text-decoration: none;
+        padding: 23px;
+        transition:
+            transform 0.2s,
+            border-color 0.2s,
+            background 0.2s;
+    }
+    .project-card[hidden] {
+        display: none;
+    }
+    .project-card:hover {
+        border-color: #398c59;
+        transform: translateY(-5px);
+        background: linear-gradient(145deg, #1d2920, #161b17);
+    }
+    .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 26px;
+    }
+    .project-index {
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.7px;
+        color: #73877a;
+    }
+    .project-arrow {
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        border: 1px solid #35483a;
+        border-radius: 9px;
+        color: #2ac670;
+        font-size: 19px;
+    }
+    .card-content {
+        flex: 1;
+    }
+    .project-type {
+        display: inline-block;
+        border: 1px solid #354538;
+        border-radius: 6px;
+        padding: 5px 8px;
+        background: #1b2a20;
+        color: #62d492;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+    }
+    .card-content h2 {
+        font-size: clamp(18px, 2vw, 22px);
+        line-height: 1.35;
+        letter-spacing: -0.025em;
+        color: #f3f5f3;
+        margin: 16px 0 12px;
+        overflow-wrap: anywhere;
+    }
+    .card-content p {
+        font-size: 13px;
+        line-height: 1.75;
+        color: #a9b5ad;
+        margin: 0;
+    }
+    .card-bottom {
+        border-top: 1px solid #304036;
+        padding-top: 18px;
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        color: #74d99c;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.4px;
+    }
+    .card-bottom span {
+        font-size: 16px;
+    }
+    .no-results {
+        margin: 35px 0;
+        text-align: center;
+        color: #b6c3ba;
+    }
+    .no-results[hidden] {
+        display: none;
+    }
+    .projects-end {
+        border: 1px solid #304636;
+        border-radius: 16px;
+        padding: 23px 27px;
+        margin-top: 44px;
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background: #161e18;
+    }
+    .projects-end > span {
+        font-size: 12px;
+        color: #c3d0c6;
+        letter-spacing: 1.5px;
+        font-weight: 800;
+    }
+    @media (max-width: 1050px) {
+        .project-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+    @media (max-width: 640px) {
+        .projects-hero {
+            padding-bottom: 36px;
+        }
+        .project-grid {
+            grid-template-columns: 1fr;
+        }
+        .project-card {
+            min-height: 260px;
+        }
+        .projects-toolbar {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .search-wrap {
+            width: 100%;
+        }
+        .projects-end {
+            padding: 22px;
+        }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .project-card {
+            transition: none;
+        }
+    }
 </style>

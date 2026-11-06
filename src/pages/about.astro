@@ -3,17 +3,43 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section>
-    <div class="about-container">
-      <img
-        src="/pictures/IMG_20230921_155205 (1) (4).jpg"
-        alt="Onur Kantarci"
-        class="profile-pic"
-      />
-      <h1>About Me</h1>
-      <div class="text-section">
+  <section class="page-wrap about-page" aria-labelledby="about-heading">
+    <div class="about-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">The person behind the code</p>
+        <h1 class="page-title" id="about-heading">About <span>Me.</span></h1>
+        <p class="lead">
+          Full-stack developer from Prizren, Kosovo, bringing together a
+          background in law, a passion for technology, and a drive to keep
+          learning.
+        </p>
+        <div class="hero-actions">
+          <a class="action" href="mailto:onur.kantarci@hotmail.com"
+            >Get in touch <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-frame">
+          <img
+            src="/pictures/309.jpg"
+            alt="Portrait of Onur Kantarci"
+            width="480"
+            height="480"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <div class="section-heading">
+        <p class="section-label">01 / My story</p><h2 class="section-title">
+          A little more <span>about me</span>
+        </h2>
+      </div>
+      <div class="story-card">
         <p>
-          Hello! I'm Onur Kantarci, a passionate and dedicated full-stack
+          Hello! I&#x27;m Onur Kantarci, a passionate and dedicated full-stack
           developer from Prizren, Kosovo. With a background in law and a
           self-taught journey into the world of web development, I have
           developed a diverse skill set that allows me to tackle complex
@@ -29,10 +55,10 @@ import Layout from "../layouts/Layout.astro";
           for seamless deployment.
         </p>
         <p>
-          I've had the privilege of learning from a senior full-stack developer
-          and being mentored by my brother, which has significantly shaped my
-          approach to development. I enjoy taking on freelance projects where I
-          can apply my knowledge and continue to grow.
+          I&#x27;ve had the privilege of learning from a senior full-stack
+          developer and being mentored by my brother, which has significantly
+          shaped my approach to development. I enjoy taking on freelance
+          projects where I can apply my knowledge and continue to grow.
         </p>
         <p>
           Some of my notable projects include a comprehensive Vue-Express Docker
@@ -42,19 +68,28 @@ import Layout from "../layouts/Layout.astro";
           communication.
         </p>
       </div>
-      <h2 class="skills-title">Skills</h2>
+    </div>
+
+    <div class="skills-section">
+      <div class="section-heading">
+        <p class="section-label">02 / Skills &amp; tools</p><h2
+          class="section-title"
+        >
+          What I work <span>with</span>
+        </h2>
+      </div>
       <ul class="skills-list">
         <li>Vue.js</li>
         <li>React</li>
         <li>Angular</li>
-        <li>HTML & CSS</li>
-        <li>JavaScript & TypeScript</li>
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript &amp; TypeScript</li>
         <li>Java</li>
         <li>GO</li>
         <li>Spring Boot</li>
         <li>Python</li>
         <li>Express.js</li>
-        <li>MongoDB & PostgreSQL</li>
+        <li>MongoDB &amp; PostgreSQL</li>
         <li>Docker</li>
         <li>REST API</li>
         <li>JSON WEB TOKEN</li>
@@ -63,90 +98,269 @@ import Layout from "../layouts/Layout.astro";
         <li>RabbitMQ</li>
         <li>IndexedDB</li>
       </ul>
+      <a class="tech-link" href="/technologies"
+        >Explore my technology stack <span aria-hidden="true">↗</span></a
+      >
     </div>
   </section>
 </Layout>
 
 <style>
-  .about-container {
-    animation: fadeIn 500ms ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Arial", sans-serif;
-    line-height: 1.6;
-    max-width: 800px;
+  .page-wrap {
+    position: relative;
+    width: min(1160px, calc(100% - 48px));
     margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
+    padding: 76px 0 110px;
+    font-family: "Roboto", sans-serif;
+    color: #f4f5f4;
   }
-
-  .profile-pic {
-    border: 1px dashed grey;
-    padding: 5px;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-    object-fit: cover;
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.6px;
+    color: #2ac670;
+    text-transform: uppercase;
   }
-
-  h1,
-  h2 {
-    padding: 20px;
+  .eyebrow:before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    background: #2ac670;
+  }
+  .page-title {
+    font-size: clamp(48px, 6.2vw, 90px);
+    line-height: 1.03;
+    letter-spacing: -0.065em;
+    margin: 0;
+    color: #f7f8f7;
+    font-weight: 800;
+  }
+  .page-title span {
+    color: #2ac670;
+  }
+  .lead {
+    max-width: 680px;
+    margin: 24px 0 0;
+    font-size: clamp(16px, 1.8vw, 19px);
+    line-height: 1.8;
+    color: #a5ada8;
+  }
+  .section-label {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2ac670;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+  .section-title {
+    font-size: clamp(27px, 3.5vw, 40px);
+    letter-spacing: -0.045em;
+    margin: 0;
+    color: #f3f5f4;
+    line-height: 1.2;
+  }
+  .action {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border: 1px solid #2ac670;
+    background: #2ac670;
+    color: #0b1710;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 13px;
     border-radius: 10px;
-    background-color: #161617;
-    border: 1px dashed grey;
-    text-align: center;
-    color: #fff;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 14px 20px;
+    transition:
+      transform 0.2s,
+      background 0.2s;
   }
-
-  .text-section {
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px dashed grey;
-    background-color: #161617;
-    width: 100%;
-    box-sizing: border-box;
+  .action:hover {
+    transform: translateY(-2px);
+    background: #53d890;
   }
-
-  p,
-  li {
-    font-size: 1.1rem;
-    color: #d5d3d3;
-    margin-bottom: 20px;
+  .action.secondary {
+    background: transparent;
+    color: #e3f1e8;
+    border-color: #35473b;
   }
-
-  .skills-title {
-    margin-top: 40px;
+  .action.secondary:hover {
+    background: #17231b;
   }
-
-  .skills-list {
-    list-style: none;
-    padding: 20px;
-    border: 1px dashed grey;
-    background-color: #161617;
-    border-radius: 10px;
-    width: 100%;
-    box-sizing: border-box;
+  :global(.site-shell) .page-wrap a:focus-visible {
+    outline: 2px solid #2ac670;
+    outline-offset: 4px;
   }
-
-  .contact {
-    text-align: center;
-  }
-
   @media (max-width: 640px) {
-    .about-container {
-      padding: 0 10px;
+    .page-wrap {
+      width: calc(100% - 36px);
+      padding: 46px 0 75px;
     }
+    .lead {
+      font-size: 16px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .action {
+      transition: none;
+    }
+  }
 
-    .text-section,
-    .skills-list,
-    h1,
-    h2 {
-      padding: 10px;
+  .about-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.75fr);
+    gap: clamp(36px, 6vw, 90px);
+    align-items: center;
+    padding: 16px 0 85px;
+    border-bottom: 1px solid #29312d;
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  .portrait-wrap {
+    max-width: 390px;
+    width: 100%;
+    justify-self: end;
+  }
+  .portrait-frame {
+    position: relative;
+    border: 1px solid #304638;
+    padding: 9px;
+    background: #171d19;
+    border-radius: 25px;
+    box-shadow: 0 22px 80px rgba(0, 0, 0, 0.25);
+  }
+  .portrait-frame:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -17px;
+    background: radial-gradient(
+      ellipse at 50% 50%,
+      rgba(42, 198, 112, 0.13),
+      transparent 68%
+    );
+  }
+  .portrait-frame img {
+    width: 100%;
+    aspect-ratio: 1/1.08;
+    object-fit: cover;
+    border-radius: 17px;
+    display: block;
+  }
+  .portrait-caption {
+    margin-top: 18px;
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    font-weight: 800;
+    color: #9ba9a0;
+  }
+  .green-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 7px;
+    background: #2ac670;
+    border-radius: 50%;
+    box-shadow: 0 0 11px rgba(42, 198, 112, 0.6);
+  }
+  .about-content,
+  .skills-section {
+    padding-top: 70px;
+  }
+  .section-heading {
+    margin-bottom: 24px;
+  }
+  .section-title span {
+    color: #2ac670;
+  }
+  .story-card {
+    padding: clamp(23px, 4vw, 42px);
+    background: linear-gradient(145deg, #191d1a, #141715);
+    border: 1px solid #2b342e;
+    border-radius: 18px;
+  }
+  .story-card p {
+    margin: 0 0 20px;
+    line-height: 1.9;
+    color: #b8c1bb;
+    font-size: 16px;
+  }
+  .story-card p:last-child {
+    margin-bottom: 0;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .skills-list li {
+    padding: 12px 16px;
+    border: 1px solid #303a33;
+    border-radius: 10px;
+    background: #191e1a;
+    color: #dee8e0;
+    font-size: 13px;
+    font-weight: 600;
+    transition:
+      border-color 0.2s,
+      transform 0.2s;
+  }
+  .skills-list li:hover {
+    border-color: #2ac670;
+    transform: translateY(-2px);
+  }
+  .tech-link {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 27px;
+    color: #2ac670;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .tech-link:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 800px) {
+    .about-hero {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .portrait-wrap {
+      justify-self: start;
+      max-width: 320px;
+    }
+  }
+  @media (max-width: 640px) {
+    .about-hero {
+      padding-bottom: 50px;
+    }
+    .about-content,
+    .skills-section {
+      padding-top: 48px;
+    }
+    .story-card p {
+      font-size: 15px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .skills-list li {
+      transition: none;
     }
   }
 </style>
