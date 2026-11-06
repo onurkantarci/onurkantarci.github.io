@@ -112,38 +112,40 @@ import Layout from "../layouts/Layout.astro";
 <script>
   const words = ["innovative", "impactful", "dynamic"];
   const typingElement = document.getElementById("typing");
-  if (
-    typingElement &&
-    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  ) {
-    let wordIndex = 0;
-    let charIndex = words[0].length;
-    let deleting = true;
-    let timeout;
 
-    function animateTyping() {
+  if (typingElement) {
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let timeout: ReturnType<typeof setTimeout>;
+
+    function type() {
+      if (!typingElement) return;
+
       const word = words[wordIndex];
+
       typingElement.textContent = word.slice(0, charIndex);
-      if (deleting) {
-        if (charIndex > 0) charIndex--;
-        else {
-          deleting = false;
-          wordIndex = (wordIndex + 1) % words.length;
-        }
+
+      if (!isDeleting && charIndex < word.length) {
+        charIndex++;
+        timeout = setTimeout(type, 120);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        timeout = setTimeout(type, 65);
       } else {
-        if (charIndex < words[wordIndex].length) charIndex++;
-        else deleting = true;
+        if (!isDeleting) {
+          isDeleting = true;
+          timeout = setTimeout(type, 1500);
+        } else {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          timeout = setTimeout(type, 400);
+        }
       }
-      const delay = deleting
-        ? charIndex === word.length
-          ? 1600
-          : 75
-        : charIndex === 0
-          ? 300
-          : 120;
-      timeout = window.setTimeout(animateTyping, delay);
     }
-    timeout = window.setTimeout(animateTyping, 1400);
+
+    type();
+
     document.addEventListener(
       "astro:before-swap",
       () => clearTimeout(timeout),
