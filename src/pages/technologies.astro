@@ -3,139 +3,611 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section>
-    <div class="technologies-container">
-      <a href="https://html.com/">
-        <img
-          src="/pictures/html-5-svgrepo-com.svg"
-          alt="HTML5"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://www.w3.org/Style/CSS/Overview.en.html">
-        <img
-          src="/pictures/css-3-svgrepo-com.svg"
-          alt="CSS3"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://reactjs.org/">
-        <img
-          src="/pictures/react-javascript-js-framework-facebook-svgrepo-com.svg"
-          alt="React"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://vuejs.org/">
-        <img
-          src="/pictures/vue-9-logo-svgrepo-com.svg"
-          alt="Vue.js"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://angular.io/">
-        <img
-          src="/pictures/angular-svgrepo-com.svg"
-          alt="Angular"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://astro.build/">
-        <img
-          src="/pictures/astro-svgrepo-com.svg"
-          alt="Astro"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-        <img
-          src="/pictures/javascript-svgrepo-com.svg"
-          alt="JavaScript"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://www.typescriptlang.org/">
-        <img
-          src="/pictures/typescript-official-svgrepo-com.svg"
-          alt="TypeScript"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://www.docker.com/">
-        <img
-          src="/pictures/docker-svgrepo-com.svg"
-          alt="Docker"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://www.python.org/">
-        <img
-          src="/pictures/python-svgrepo-com.svg"
-          alt="Python"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://www.rabbitmq.com/">
-        <img
-          src="/pictures/rabbitmq-svgrepo-com.svg"
-          alt="RabbitMQ"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://www.postgresql.org/">
-        <img
-          src="/pictures/postgresql-svgrepo-com.svg"
-          alt="PostgreSQL"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://git-scm.com/">
-        <img
-          src="/pictures/github-color-svgrepo-com.svg"
-          alt="Git"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://getbootstrap.com/">
-        <img
-          src="/pictures/bootstrap-svgrepo-com.svg"
-          alt="Bootstrap"
-          class="tech-icon"
-        />
-      </a>
-      <a href="https://www.mongodb.com/">
-        <img
-          src="/pictures/mongodb-svgrepo-com.svg"
-          alt="MongoDB"
-          class="tech-icon"
-        />
-      </a>
+  <section
+    class="page-wrap technologies-page"
+    aria-labelledby="technologies-heading"
+  >
+    <div class="tech-hero">
+      <p class="eyebrow">My technical toolkit</p><h1
+        class="page-title"
+        id="technologies-heading"
+      >
+        Technologies<span>.</span>
+      </h1><p class="lead">
+        The languages, frameworks, and tools I use to explore ideas, develop
+        applications, and keep sharpening my skills.
+      </p><div class="hero-meta">
+        <span class="meta-dot"></span> ALWAYS EXPERIMENTING • ALWAYS LEARNING
+      </div>
+    </div>
+    <div class="tech-sections">
+      <section class="tech-group" aria-label="Web fundamentals">
+        <div class="group-heading">
+          <div>
+            <p class="section-label">The building blocks</p><h2
+              class="section-title"
+            >
+              Web fundamentals
+            </h2>
+          </div><span class="group-count">04 TOOLS</span>
+        </div><div class="tech-grid">
+          <a
+            class="tech-card"
+            href="https://html.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/html-5-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">HTML5</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://www.w3.org/Style/CSS/Overview.en.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/css-3-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">CSS3</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/javascript-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">JavaScript</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/typescript-official-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">TypeScript</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+        </div>
+      </section>
+      <section class="tech-group" aria-label="Frameworks">
+        <div class="group-heading">
+          <div>
+            <p class="section-label">Interfaces & experiences</p><h2
+              class="section-title"
+            >
+              Frameworks
+            </h2>
+          </div><span class="group-count">05 TOOLS</span>
+        </div><div class="tech-grid">
+          <a
+            class="tech-card"
+            href="https://reactjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/react-javascript-js-framework-facebook-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">React</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://vuejs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/vue-9-logo-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">Vue.js</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://angular.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/angular-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">Angular</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://astro.build/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/astro-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">Astro</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://getbootstrap.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/bootstrap-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">Bootstrap</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+        </div>
+      </section>
+      <section class="tech-group" aria-label="Languages & data">
+        <div class="group-heading">
+          <div>
+            <p class="section-label">Application logic & storage</p><h2
+              class="section-title"
+            >
+              Languages & data
+            </h2>
+          </div><span class="group-count">03 TOOLS</span>
+        </div><div class="tech-grid">
+          <a
+            class="tech-card"
+            href="https://www.python.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/python-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">Python</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://www.postgresql.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/postgresql-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">PostgreSQL</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://www.mongodb.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/mongodb-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">MongoDB</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+        </div>
+      </section>
+      <section class="tech-group" aria-label="Tools & infrastructure">
+        <div class="group-heading">
+          <div>
+            <p class="section-label">Build, ship & collaborate</p><h2
+              class="section-title"
+            >
+              Tools & infrastructure
+            </h2>
+          </div><span class="group-count">03 TOOLS</span>
+        </div><div class="tech-grid">
+          <a
+            class="tech-card"
+            href="https://www.docker.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/docker-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">Docker</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://www.rabbitmq.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/rabbitmq-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">RabbitMQ</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+          <a
+            class="tech-card"
+            href="https://git-scm.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="icon-holder">
+              <img
+                src="/pictures/github-color-svgrepo-com.svg"
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+              />
+            </div><span class="tech-name">Git</span><span
+              class="tech-arrow"
+              aria-hidden="true">↗</span
+            ></a
+          >
+        </div>
+      </section>
+    </div>
+    <div class="tech-outro">
+      <div>
+        <p class="section-label">Let's connect</p><h2 class="section-title">
+          Have a project in mind?
+        </h2>
+      </div><a class="action" href="mailto:onur.kantarci@hotmail.com"
+        >Let's talk <span aria-hidden="true">↗</span></a
+      >
     </div>
   </section>
 </Layout>
 
 <style>
-  .technologies-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 30px;
+  .page-wrap {
+    position: relative;
+    width: min(1160px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 76px 0 110px;
+    font-family: "Roboto", sans-serif;
+    color: #f4f5f4;
+  }
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.6px;
+    color: #2ac670;
+    text-transform: uppercase;
+  }
+  .eyebrow:before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    background: #2ac670;
+  }
+  .page-title {
+    font-size: clamp(48px, 6.2vw, 90px);
+    line-height: 1.03;
+    letter-spacing: -0.065em;
+    margin: 0;
+    color: #f7f8f7;
+    font-weight: 800;
+  }
+  .page-title span {
+    color: #2ac670;
+  }
+  .lead {
+    max-width: 680px;
+    margin: 24px 0 0;
+    font-size: clamp(16px, 1.8vw, 19px);
+    line-height: 1.8;
+    color: #a5ada8;
+  }
+  .section-label {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2ac670;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+  .section-title {
+    font-size: clamp(27px, 3.5vw, 40px);
+    letter-spacing: -0.045em;
+    margin: 0;
+    color: #f3f5f4;
+    line-height: 1.2;
+  }
+  .action {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    max-width: 40%;
-    padding: 20px;
+    gap: 11px;
+    border: 1px solid #2ac670;
+    background: #2ac670;
+    color: #0b1710;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 14px 20px;
+    transition:
+      transform 0.2s,
+      background 0.2s;
+  }
+  .action:hover {
+    transform: translateY(-2px);
+    background: #53d890;
+  }
+  .action.secondary {
+    background: transparent;
+    color: #e3f1e8;
+    border-color: #35473b;
+  }
+  .action.secondary:hover {
+    background: #17231b;
+  }
+  :global(.site-shell) .page-wrap a:focus-visible {
+    outline: 2px solid #2ac670;
+    outline-offset: 4px;
+  }
+  @media (max-width: 640px) {
+    .page-wrap {
+      width: calc(100% - 36px);
+      padding: 46px 0 75px;
+    }
+    .lead {
+      font-size: 16px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .action {
+      transition: none;
+    }
   }
 
-  .tech-icon {
-    border: 1px solid #2ac67041;
-    background: #161617;
-    padding: 20px;
-    max-width: 100px;
-    max-height: 100px;
+  .tech-hero {
+    padding: 12px 0 70px;
+    border-bottom: 1px solid #29342d;
+  }
+  .hero-meta {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    color: #9caea2;
+  }
+  .meta-dot {
+    width: 8px;
+    height: 8px;
+    background: #2ac670;
+    border-radius: 50%;
+    box-shadow: 0 0 14px #2ac67080;
+  }
+  .tech-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    padding: 62px 0;
+  }
+  .group-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+  .group-count {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #7e9584;
+    white-space: nowrap;
+  }
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 19px;
+    min-width: 0;
+    min-height: 165px;
+    padding: 20px 12px;
+    border: 1px solid #2b392f;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #1a201b, #161a17);
+    color: #ebf2eb;
+    text-decoration: none;
+    transition:
+      transform 0.2s,
+      border-color 0.2s,
+      background 0.2s;
+  }
+  .tech-card:hover {
+    border-color: #369359;
+    background: #1b2820;
+    transform: translateY(-5px);
+  }
+  .icon-holder {
+    height: 68px;
+    width: 68px;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: 1px solid #34453a;
+    border-radius: 14px;
+    background: #111913;
+  }
+  .icon-holder img {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
+    width: 54px;
+    height: 54px;
   }
-
-  a {
-    display: block;
+  .tech-name {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+  .tech-arrow {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    font-size: 13px;
+    color: #6c9c7a;
+    opacity: 0.7;
+  }
+  .tech-outro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #31513a;
+    border-radius: 18px;
+    padding: 30px;
+    background: linear-gradient(120deg, #18271d, #151915);
+  }
+  @media (max-width: 960px) {
+    .tech-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 580px) {
+    .tech-hero {
+      padding-bottom: 48px;
+    }
+    .tech-sections {
+      padding: 46px 0;
+      gap: 45px;
+    }
+    .tech-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .tech-card {
+      min-height: 145px;
+    }
+    .group-heading {
+      align-items: start;
+    }
+    .group-count {
+      margin-top: 4px;
+    }
+    .tech-outro {
+      flex-direction: column;
+      align-items: start;
+      padding: 23px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tech-card {
+      transition: none;
+    }
   }
 </style>
